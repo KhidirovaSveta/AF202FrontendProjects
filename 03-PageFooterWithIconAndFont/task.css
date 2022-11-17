@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(232, 232, 232);
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    letter-spacing: 3px;
+    box-sizing: border-box;
+
+}
+
+.main {
+    margin-top: 60px;
+    display: flex;
+    margin-bottom: 90px;
+    color: rgb(39, 63, 136);
+}
+
+/* info block */
+
+.info {
+    margin-left: 100px;
+}
+.info i {
+    color: rgb(51, 133, 42);
+    font-weight: 800;
+}
+span {
+    color:  rgb(51, 133, 42);
+    font-weight: 400;
+}
+
+/* .info p {
+    margin: 0;
+} */
+
+/*  registration */
+
+.contact {
+  width: 600px;
+  height: 410px;
+  background-color: white;
+  border-radius: 9px;
+  margin-left: 370px;
+  box-shadow: 0 0 7px rgba(73, 73, 73, 0.3); 
+}
+.contact h1 {
+    text-align: center;
+    color: rgb(56, 89, 136);
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+input{
+    box-sizing: border-box;
+    width: 550px;
+    height: 39px;
+    margin-bottom: 17px;
+    border: none;
+    background-color:  rgba(182, 182, 182, 0.3);
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    letter-spacing: 4px;
+    border-radius: 7px;
+    padding: 20px;
+}
+textarea {
+    box-sizing: border-box;
+    width: 550px;
+    border: none;
+    background-color:  rgba(182, 182, 182, 0.3);
+    font-family: 'Inconsolata', monospace;
+    font-weight: 600;
+    letter-spacing: 4px;
+    border-radius: 7px;
+    padding: 20px;
+}
+
+/* Button  */
+
+button {
+    width: 100%;
+    height: 50px;
+    margin-top: 35px;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    border: none;
+    letter-spacing: 3px;
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
+    color: white;
+    background-color:  rgb(66, 132, 46);
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.35s;
+}
+
+button:hover {
+    background-color: rgb(110, 195, 84);
+    color: rgb(0, 93, 0);
+}
+
+/* footer */
+
+footer {
+    width: 100vw;
+    height: 213px;
+    background-color: rgb(30, 30, 30);
+}
+.icons  {
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons i {
+    margin-top: 70px;
+    margin-left: 20px;
+    transition: 0.25s;
+}
+
+.icons i:hover {
+    color: rgb(66, 132, 46);
+    font-size: 23px;
+}
+.footer-text {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
