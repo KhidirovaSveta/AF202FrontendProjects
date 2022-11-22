@@ -1,0 +1,398 @@
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  color: white;
+}
+
+/* left box header */
+
+.leftBox {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+.leftBoxHeader {
+    display: flex;
+    height: 50%;
+    gap: 2%;
+}
+
+.home {
+    background-color: rgb(1, 140, 255);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;  
+}
+.about {
+    background-color: rgb(1, 140, 255);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+/* left box footer */
+
+.leftBoxFooter {
+    width: 100%;
+    display: flex;
+    height: 20%;
+    gap: 2%;
+    margin-top: 1.5%;
+}
+.pricing {
+    background-color: rgb(1, 140, 255);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+} 
+
+.customers {
+    background-color: rgb(1, 140, 255);
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+.offers {
+    background-color: rgb(1, 140, 255);
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+.contact {
+    background-color: rgb(1, 140, 255);
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+.menu {
+    background-color: rgb(1, 140, 255);
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+/* Right box header */
+
+.rightBox {
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+}
+
+.rightBoxHeader {
+    width: 100%;
+    display: flex;
+    height: 25%;
+    gap: 2%;
+}
+
+.projects {
+    background-color: rgb(1, 140, 255);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-bottom: 1.5%;
+
+} 
+
+.blog {
+    background-color: rgb(1, 140, 255);
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+.gallery {
+    background-color: rgb(1, 140, 255);
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+.portfolio {
+    background-color: rgb(1, 140, 255);
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+.menu1 {
+    background-color: rgb(1, 140, 255);
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+}
+
+/* Right box footer */
+
+.rightBoxFooter {
+    width: 100%;
+    display: flex;
+    height: 42%;
+    gap: 2%;
+    margin-top: 1.5%;
+}
+.events {
+    background-color: rgb(1, 140, 255);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;  
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .container {
+        width: 100%;
+        height: 50vh;
+        display: block;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .leftBox {
+        width: 100%;
+      }
+      .rightBox {
+        display: block;
+        flex-direction: column;
+        margin-top: 1%;
+        width: 100%;
+    }
+    .home {
+        background-color: rgb(235, 0, 0);
+    }
+    .about {
+        background-color: rgb(235, 0, 0);
+    }
+    .pricing {
+        background-color: rgb(235, 0, 0);
+    } 
+    .customers {
+        background-color: rgb(235, 0, 0);
+    }
+    .offers {
+        background-color: rgb(235, 0, 0);
+    }
+    .contact {
+        background-color: rgb(235, 0, 0);
+    }
+    .menu {
+        background-color: rgb(235, 0, 0);
+    }
+    .projects {
+        background-color: rgb(235, 0, 0);
+    } 
+    .blog {
+        background-color: rgb(235, 0, 0);
+    }
+    .gallery {
+        background-color: rgb(235, 0, 0);
+    }
+    .portfolio {
+        background-color: rgb(235, 0, 0);
+    }
+    .events {
+        background-color: rgb(235, 0, 0);
+    }
+    .menu1 {
+        background-color: rgb(235, 0, 0);
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .container {
+        width: 100%;
+        height: 50vh;
+        display: block;
+        justify-content: center;
+        align-items: center;
+      }
+    .leftBoxFooter {
+        flex-wrap: wrap;
+    }
+      .rightBox {
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.5%;
+    }
+    .rightBoxHeader {
+        flex-wrap: wrap;
+    }
+    .home {
+        background-color: rgb(0, 240, 52);
+    }
+    .about {
+        background-color: rgb(0, 240, 52);
+    }
+    .pricing {
+        background-color: rgb(0, 240, 52);
+    } 
+    .customers {
+        background-color: rgb(0, 240, 52);
+        width: 49%;
+        margin-bottom: 1%;
+    }
+    .offers {
+        background-color: rgb(0, 240, 52);
+        width: 49%;
+        margin-bottom: 1%;
+    }
+    .contact {
+        background-color: rgb(0, 240, 52);
+        width: 49%;
+    }
+    .menu {
+        background-color: rgb(0, 240, 52);
+        width: 49%;
+    }
+    .projects {
+        background-color: rgb(0, 240, 52);
+    } 
+    .blog {
+        background-color: rgb(0, 240, 52);
+        width: 49%;
+        margin-bottom: 1%;
+    }
+    .gallery {
+        background-color: rgb(0, 240, 52);
+        width: 49%;
+        margin-bottom: 1%;
+    }
+    .portfolio {
+        background-color: rgb(0, 240, 52);
+        width: 49%;
+    }
+    .menu1 {
+        background-color: rgb(0, 240, 52);
+        width: 49%;
+    }
+    .events {
+        background-color: rgb(0, 240, 52);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        display: block;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+      .leftBox {
+        display: block;
+    }
+    .leftBoxHeader {
+        display: block;
+    }
+    .leftBoxFooter {
+        display: block;
+        width: 50%;
+    }
+    .rightBox {
+        display: block;
+    }
+    .rightBoxHeader {
+        display: block;
+    }
+    .rightBoxFooter {
+        display: block;
+    }
+    .home {
+        background-color: rgb(234, 242, 0);
+        margin-bottom: 2%;
+        width: 100%;
+    }
+    .about {
+        background-color: rgb(234, 242, 0);
+        width: 100%;
+    }
+    .pricing {
+        background-color: rgb(234, 242, 0);
+        width: 200%;
+    } 
+    .customers {
+        background-color: rgb(234, 242, 0);
+        width: 200%;
+        margin-bottom: 3%;
+    }
+    .offers {
+        background-color: rgb(234, 242, 0);
+        width: 200%;
+        margin-bottom: 3%;
+    }
+    .contact {
+        background-color: rgb(234, 242, 0);
+        width: 200%;
+        margin-bottom: 3%;
+    }
+    .menu {
+        background-color: rgb(234, 242, 0);
+        width: 200%;
+        margin-bottom: 2%;
+    }
+    .projects {
+        background-color: rgb(234, 242, 0);
+        width: 100%;
+        margin-bottom: 2%;
+    } 
+    .blog {
+        background-color: rgb(234, 242, 0);
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    .gallery {
+        background-color: rgb(234, 242, 0);
+        width: 100%;
+        margin-bottom: 2%;
+    }
+    .portfolio {
+        background-color: rgb(234, 242, 0);
+        width: 100%;
+        height: 100%;
+        margin-bottom: 2%;
+    }
+    .menu1 {
+        background-color: rgb(234, 242, 0);
+        width: 100%;
+    }
+    .events {
+        background-color: rgb(234, 242, 0);
+        width: 100%;
+        margin-bottom: 2%;
+    }
+}
+
