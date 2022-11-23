@@ -1,0 +1,12 @@
+@mixin card ($background-color: transparent) {
+    background-color: $background-color;
+    margin-top: 5%;
+}
+
+
+@mixin flexBox($justify-content: center, $align-items: center) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+

@@ -1,0 +1,63 @@
+@import "./variables";
+@import "./_mixins";
+@import "./button";
+
+
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  background-color: $bg-color;
+  color: $color-white;
+  .info {
+    text-align: center;
+    h1 {
+      padding-top: 3%;
+      padding-bottom: 1%;
+    }
+  }
+  .box  {
+   @include flexBox();
+   margin: 5% 10%;
+  .card {
+   @include card ();
+   margin: 1%;
+   &:hover {
+      background-color: #2953de;
+     }
+  }
+  .cyrcle {
+     border: 2px solid $color-white;
+     background-color: transparent;
+     width: 35%;
+     border-radius: 50%;
+     margin-top: 15%;
+     i {
+       @include flexBox();
+       font-size: 60px;
+       padding-top: 20%;
+       padding-bottom: 20% ;
+       color: white;
+     }
+  }
+  h2{
+   text-align: center;
+   padding-top: 15%;
+  }
+  p{
+   text-align: center;
+   padding: 5%;
+   padding-top: 12%;
+  }
+
+  button {
+   @include flexBox();
+   margin-top: 5%;
+   margin-bottom: 15%;
+   @extend %main-button;
+  }  
+}
+}
