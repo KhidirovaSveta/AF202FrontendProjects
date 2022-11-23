@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500;600;700&family=Grand+Hotel&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #f1f5f8;
+  display: flex;
+  justify-content: center;
+  margin: 2% 0;
+  font-family: "Catamaran", sans-serif;
+  letter-spacing: 2px;
+}
+
+/* Text section */
+
+.text {
+  padding: 3% 0 0 5%;
+  margin-left: 5%;
+}
+
+.text p {
+  letter-spacing: 0;
+  margin: 2% 0;
+  width: 80%;
+}
+.GrandText {
+  color: #648b57;
+  font-size: 25px;
+  font-family: "Grand Hotel", cursive;
+}
+.text h1 {
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+
+.btn1 {
+  margin-top: 4%;
+  border: none;
+  padding: 1% 4%;
+  background-color: #688e3f;
+  letter-spacing: 2px;
+  color: white;
+  font-weight: 700;
+  font-family: "Catamaran", sans-serif;
+  transition: 0.35s;
+}
+.btn1:hover {
+  background-color: #b7dd8d;
+  color: #548124;
+}
+
+/* Tea section */
+
+.typeOfTea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  margin-right: 7%;
+}
+.tea {
+  margin: 5%;
+}
+.tea img {
+  width: 130%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+}
+
+.tea span {
+  color: #648b57;
+}
+
+@media only screen and (max-width: 992px) {
+  .container {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    background-color: #f1f5f8;
+  }
+
+  .typeOfTea {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Second Sectoin */
+
+.title {
+  text-align: center;
+  margin-top: 4%;
+  font-size: 25px;
+}
+.title .fontSize {
+   font-size: 30px;
+   letter-spacing: 2px;
+}
+
+.service {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  margin: 2%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f5f8;
+  border-radius: 20px;
+  background-size: 100% 58%;
+  background-repeat: no-repeat;
+  padding-bottom: 3%;
+  font-family: "Catamaran", sans-serif;
+  letter-spacing: 2px;
+  box-shadow: 1px 2px 7px rgba(53, 53, 53, 0.5);
+  position: relative;
+}
+
+.box-img {
+  background-image: url(images/tea-1.jpeg);
+}
+.box-img2 {
+  background-image: url(images/tea-2.jpeg);
+}
+.box-img3 {
+  background-image: url(images/tea-3.jpeg);
+}
+.text2 {
+  font-size: 25px;
+  font-weight: bold;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100%;
+}
+.text2 i {
+  background-color: #bbf188;
+  border: 5px solid #f1f5f8;
+  color: #678e40;
+  border-radius: 50%;
+  font-size: 35px;
+  padding: 3%;
+  position: absolute;
+  margin-top: -65px;
+}
+.box:hover {
+  transform: scale(1.1);
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.btn2 {
+  border: none;
+  padding: 1% 4%;
+  background-color: #688e3f;
+  letter-spacing: 2px;
+  color: white;
+  font-weight: 700;
+  font-family: "Catamaran", sans-serif;
+  transition: 0.35s;
+  border-radius: 7px;
+  margin-top: 7%;
+}
+.btn2:hover {
+  background-color: #b7dd8d;
+  color: #548124;
+}
+.txt {
+  font-size: 60%;
+  font-weight: 400;
+  padding: 3%;
+  letter-spacing: 0;
+}
+
+.text2 .mug {
+  padding: 12px 10px 12px 16px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .box {
+    background-size: 100% 50%;
+  }
+  .text2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .text2 i {
+    margin-top: -90%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .service {
+    display: block;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .box {
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: 100% 62%;
+    margin-left: 2.5%;
+    margin-bottom: 3%;
+  }
+  .text2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 28px;
+  }
+  .text2 i {
+    margin-top: -60%;
+  }
+
+  .btn2 {
+    margin-top: 5%;
+    margin-bottom: 10%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .box {
+    width: 100vw;
+    margin-bottom: 7%;
+    margin-left: 5%;
+  }
+  .text2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 24px;
+  }
+  .title {
+    margin-bottom: 7%;
+    margin-left: 15%;
+  }
+
+  .btn2 {
+    margin-top: 1%;
+    margin-bottom: 10%;
+  }
+}
