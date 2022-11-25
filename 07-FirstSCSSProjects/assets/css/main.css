@@ -25,7 +25,7 @@
   text-align: center;
   padding-top: 5%;
   padding-bottom: 3%;
-  transition: 0.35s;
+  transition: all 0.35s;
 }
 #header .container .main-box .box:hover {
   background-color: #fff;
@@ -33,12 +33,12 @@
 }
 #header .container .main-box .box i {
   font-size: 30px;
-  margin-bottom: 7%;
+  margin-bottom: 5%;
   color: #648b57;
-  transition: 0.35s;
+  transition: all 0.4s;
 }
 #header .container .main-box .box i:hover {
-  margin-bottom: 10%;
+  margin-bottom: 7%;
 }
 #header .container .main-box .box h5 {
   font-weight: bold;
@@ -149,7 +149,7 @@
   letter-spacing: 3px;
 }
 #products .container .products .text .btn1 {
-  margin-top: 4%;
+  margin-top: 5%;
   font-family: "Catamaran", sans-serif;
   transition: 0.35s;
 }
@@ -221,19 +221,14 @@
 #services .container .service .box .card {
   margin: 2%;
   position: relative;
+  background-image: url("../images/product-1.jpeg");
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
 }
 #services .container .service .box .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   transition-duration: 1s;
   cursor: pointer;
-}
-#services .container .service .box .card img {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  margin-top: -320px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
 }
 #services .container .service .box .card i {
   font-size: 30px;
@@ -241,12 +236,12 @@
   border: 5px solid #f1f5f8;
   color: #678e40;
   border-radius: 50%;
-  padding: 4%;
-  position: absolute;
-  margin-right: 5%;
+  padding: 5%;
 }
 #services .container .service .box .card .icon {
-  margin-top: -80px;
+  margin-top: 90px;
+  align-items: center;
+  text-align: center;
 }
 #services .container .service .box .card h1 {
   padding-top: 5%;
@@ -256,7 +251,7 @@
   padding: 4%;
 }
 #services .container .service .box .card .mug {
-  padding: 12px 14px 15px 20px;
+  padding: 15px 14px 19px 20px;
 }
 #services .container .service .box .card button {
   margin-top: 10%;
@@ -290,6 +285,7 @@
     align-items: center;
     flex-direction: column;
     font-size: 28px;
+    width: 50%;
   }
   .service .box .card i {
     margin-top: -60%;
@@ -298,7 +294,11 @@
     font-size: 50%;
   }
   .service .box .card h1 {
-    font-size: 50%;
+    font-size: 70%;
+  }
+  .service .box .card .icon {
+    align-items: center;
+    text-align: center;
   }
   .service button {
     margin-top: 5%;
@@ -464,7 +464,7 @@
 #services .container .service .box .card {
   width: 70%;
   background-color: #f1f5f8;
-  padding-top: 26%;
+  padding-top: 15%;
   padding-bottom: 5%;
   text-align: center;
   border-radius: 15px;

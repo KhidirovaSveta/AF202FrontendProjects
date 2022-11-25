@@ -17,18 +17,18 @@
         text-align: center;
         padding-top: 5%;
         padding-bottom: 3%;
-        transition: 0.35s;
+        transition: all 0.35s;
         &:hover {
           background-color: $white-color;
           border-bottom: 2px solid $details-color;
         }
         i {
           font-size: 30px;
-          margin-bottom: 7%;
+          margin-bottom: 5%;
           color: $details-color;
-          transition: 0.35s;
+          transition: all 0.4s;
           &:hover {
-            margin-bottom: 10%;
+            margin-bottom: 7%;
           }
         }
         h5 {
@@ -41,11 +41,12 @@
           padding: 2% 10%;
         }
       }
-    }  @media only screen and (max-width: 768px) {
-          .main-box {
-             display: block;
-          }
-    } 
+    }
+    @media only screen and (max-width: 768px) {
+      .main-box {
+        display: block;
+      }
+    }
   }
 }
 // Section: 1 [Tea Station]
@@ -121,7 +122,7 @@
             width: 50vw;
           }
           p {
-            margin-top: 10%
+            margin-top: 10%;
           }
         }
       }
@@ -152,7 +153,7 @@
           letter-spacing: 3px;
         }
         .btn1 {
-          margin-top: 4%;
+          margin-top: 5%;
           @extend %primary-button;
           font-family: "Catamaran", sans-serif;
           transition: 0.35s;
@@ -226,31 +227,30 @@
           margin: 2%;
           @extend %card;
           position: relative;
+          background-image: url("../images/product-1.jpeg");
+          background-size: 100% 50%;
+          background-repeat: no-repeat;
           &:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
             transition-duration: 1s;
             cursor: pointer;
           }
-          img {
-            position: absolute;
-            width: 100%;
-            display: flex;
-            margin-top: -320px;
-            border-top-left-radius: 15px;
-            border-top-right-radius: 15px;
-          }
+          // .img1 {
+          //   background-image: url("../images/product-1.jpeg");
+          // }
           i {
             font-size: 30px;
             background-color: #bbf188;
             border: 5px solid #f1f5f8;
             color: #678e40;
             border-radius: 50%;
-            padding: 4%;
-            position: absolute;
-            margin-right: 5%;
+            padding: 5%;
           }
           .icon {
-            margin-top: -80px;
+            margin-top: 90px;
+            align-items: center;
+            text-align: center;
+
           }
           h1 {
             padding-top: 5%;
@@ -260,7 +260,7 @@
             padding: 4%;
           }
           .mug {
-            padding: 12px 14px 15px 20px;
+            padding: 15px 14px 19px 20px;
           }
           button {
             @extend %primary-button;
@@ -273,7 +273,7 @@
             }
           }
         }
-      } 
+      }
     }
   }
 }
@@ -293,6 +293,7 @@
         @include flexBox;
         flex-direction: column;
         font-size: 28px;
+        width: 50%;
         i {
           margin-top: -60%;
         }
@@ -300,7 +301,11 @@
           font-size: 50%;
         }
         h1 {
-          font-size: 50%;
+          font-size: 70%;
+        }
+        .icon {
+          align-items: center;
+          text-align: center;
         }
       }
     }
