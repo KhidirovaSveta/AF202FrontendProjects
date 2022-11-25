@@ -41,7 +41,11 @@
           padding: 2% 10%;
         }
       }
-    }
+    }  @media only screen and (max-width: 768px) {
+          .main-box {
+             display: block;
+          }
+    } 
   }
 }
 // Section: 1 [Tea Station]
@@ -107,12 +111,17 @@
         }
       }
     }
-    @media only screen and (max-width: 992px) {
+    @media only screen and (max-width: 768px) {
       .main {
         display: block;
         .text {
-          p, h2 {
-            width: 100vw;
+          padding: 0;
+          p,
+          h2 {
+            width: 50vw;
+          }
+          p {
+            margin-top: 10%
           }
         }
       }
@@ -120,7 +129,7 @@
   }
 }
 
-//second: 2 [Our products]
+//Section: 2 [Our products]
 
 #products {
   .container {
@@ -177,8 +186,12 @@
     @media only screen and (max-width: 768px) {
       .products {
         display: block;
+        .text {
+          margin-left: 0;
+        }
         .typeOfTea {
           display: block;
+          margin-right: 0;
         }
       }
     }
@@ -260,11 +273,11 @@
             }
           }
         }
-      }
+      } 
     }
   }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 768px) {
   .service {
     display: block;
     justify-content: center;
@@ -414,7 +427,7 @@
         }
       }
     }
-    @media only screen and (max-width: 992px) {
+    @media only screen and (max-width: 768px) {
       .main {
         display: block;
         .contact {

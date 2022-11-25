@@ -49,6 +49,11 @@
 #header .container .main-box .box p {
   padding: 2% 10%;
 }
+@media only screen and (max-width: 768px) {
+  #header .container .main-box {
+    display: block;
+  }
+}
 
 #tea-station .container .main {
   margin-top: 10%;
@@ -105,12 +110,19 @@
   background-color: #b7dd8d;
   color: #548124;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
   #tea-station .container .main {
     display: block;
   }
-  #tea-station .container .main .text p, #tea-station .container .main .text h2 {
-    width: 100vw;
+  #tea-station .container .main .text {
+    padding: 0;
+  }
+  #tea-station .container .main .text p,
+#tea-station .container .main .text h2 {
+    width: 50vw;
+  }
+  #tea-station .container .main .text p {
+    margin-top: 10%;
   }
 }
 
@@ -169,8 +181,12 @@
   #products .container .products {
     display: block;
   }
+  #products .container .products .text {
+    margin-left: 0;
+  }
   #products .container .products .typeOfTea {
     display: block;
+    margin-right: 0;
   }
 }
 
@@ -252,7 +268,7 @@
   color: #548124;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 768px) {
   .service {
     display: block;
     justify-content: center;
@@ -405,7 +421,7 @@
 #footer .container footer .footer-text span {
   color: #648b57;
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
   #footer .container .main {
     display: block;
   }
