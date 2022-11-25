@@ -18,27 +18,28 @@
         padding-top: 5%;
         padding-bottom: 3%;
         transition: all 0.35s;
-        &:hover {
-          background-color: $white-color;
-          border-bottom: 2px solid $details-color;
-        }
-        i {
+        .fa-solid {
           font-size: 30px;
           margin-bottom: 5%;
           color: $details-color;
           transition: all 0.4s;
-          &:hover {
-            margin-bottom: 7%;
-          }
         }
         h5 {
           font-weight: bold;
           letter-spacing: 2px;
-          padding-bottom: 5%;
+          padding-bottom: 3%;
           font-size: 15px;
         }
         p {
-          padding: 2% 10%;
+          padding: 0% 10%;
+        }
+        &:hover {
+          transform: scale(1.05);
+          background-color: $white-color;
+          border-bottom: 2px solid $details-color;
+        }
+        &:hover .fa-solid {
+          transform: translateY(20%);
         }
       }
     }
@@ -79,8 +80,11 @@
       }
       .article-img-holder:hover {
         transform: scale(1.2);
-        background-image: linear-gradient(rgba(39, 161, 26, 0.3), rgba(39, 161, 26, 0.3)), url(../images/tea.jpeg);
-
+        background-image: linear-gradient(
+            rgba(39, 161, 26, 0.3),
+            rgba(39, 161, 26, 0.3)
+          ),
+          url(../images/tea.jpeg);
       }
 
       .text {
@@ -245,10 +249,9 @@
             padding: 5%;
           }
           .icon {
-            margin-top: 90px;
+            margin-top: 80px;
             align-items: center;
             text-align: center;
-
           }
           h1 {
             padding-top: 5%;
@@ -271,15 +274,15 @@
             }
           }
         }
-          .img1 {
-            background-image: url("../images/product-1.jpeg");
-          }
-          .img2 {
-            background-image: url("../images/product-2.jpeg");
-          }
-          .img3 {
-            background-image: url("../images/product-3.jpeg");
-          }
+        .img1 {
+          background-image: url("../images/product-1.jpeg");
+        }
+        .img2 {
+          background-image: url("../images/product-2.jpeg");
+        }
+        .img3 {
+          background-image: url("../images/product-3.jpeg");
+        }
       }
     }
   }
