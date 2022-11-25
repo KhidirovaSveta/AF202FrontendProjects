@@ -66,10 +66,10 @@
         .article-img-holder {
           width: 100%;
           height: 100%;
-          // background: url(/assets/images/tea.jpeg);
-          // background-position: center;
-          // background-size: cover;
-          // background-repeat: no-repeat;
+          background: url(../images/tea.jpeg);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
           transition: all 1s;
           img {
             width: 440px;
@@ -79,6 +79,8 @@
       }
       .article-img-holder:hover {
         transform: scale(1.2);
+        background-image: linear-gradient(rgba(39, 161, 26, 0.3), rgba(39, 161, 26, 0.3)), url(../images/tea.jpeg);
+
       }
 
       .text {
