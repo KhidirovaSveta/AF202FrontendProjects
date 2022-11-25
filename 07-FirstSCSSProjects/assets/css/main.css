@@ -310,10 +310,6 @@
   .service .box .card h1 {
     font-size: 70%;
   }
-  .service .box .card .icon {
-    align-items: center;
-    text-align: center;
-  }
   .service button {
     margin-top: 5%;
     margin-bottom: 10%;
