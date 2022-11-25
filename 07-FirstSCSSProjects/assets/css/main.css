@@ -105,6 +105,14 @@
   background-color: #b7dd8d;
   color: #548124;
 }
+@media only screen and (max-width: 992px) {
+  #tea-station .container .main {
+    display: block;
+  }
+  #tea-station .container .main .text p, #tea-station .container .main .text h2 {
+    width: 100vw;
+  }
+}
 
 #products .container .products {
   display: flex;
