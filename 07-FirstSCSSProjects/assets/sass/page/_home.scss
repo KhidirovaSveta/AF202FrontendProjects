@@ -227,7 +227,6 @@
           margin: 2%;
           @extend %card;
           position: relative;
-          background-image: url("../images/product-1.jpeg");
           background-size: 100% 50%;
           background-repeat: no-repeat;
           &:hover {
@@ -235,9 +234,6 @@
             transition-duration: 1s;
             cursor: pointer;
           }
-          // .img1 {
-          //   background-image: url("../images/product-1.jpeg");
-          // }
           i {
             font-size: 30px;
             background-color: #bbf188;
@@ -273,6 +269,15 @@
             }
           }
         }
+          .img1 {
+            background-image: url("../images/product-1.jpeg");
+          }
+          .img2 {
+            background-image: url("../images/product-2.jpeg");
+          }
+          .img3 {
+            background-image: url("../images/product-3.jpeg");
+          }
       }
     }
   }
