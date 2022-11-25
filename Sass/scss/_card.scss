@@ -52,12 +52,19 @@
    padding: 5%;
    padding-top: 12%;
   }
-
+  
   button {
    @include flexBox();
    margin-top: 5%;
    margin-bottom: 15%;
    @extend %main-button;
   }  
+  
 }
+@media only screen and (max-width: 992px) {
+     .box {
+     display: block;
+    }
+}
+
 }

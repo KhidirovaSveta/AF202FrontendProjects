@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@500;600&family=Grand+Hotel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Catamaran", sans-serif;
+}
+#header {
+  .container {
+    .main-box {
+      background-color: $bg-color;
+      width: 100%;
+      @include flexBox(space-between);
+      .box {
+        width: 100%;
+        text-align: center;
+        padding-top: 5%;
+        padding-bottom: 3%;
+        transition: 0.35s;
+        &:hover {
+          background-color: $white-color;
+          border-bottom: 2px solid $details-color;
+        }
+        i {
+          font-size: 30px;
+          margin-bottom: 7%;
+          color: $details-color;
+          transition: 0.35s;
+          &:hover{
+            margin-bottom: 10%;
+          }
+        }
+        h5 {
+          font-weight: bold;
+          letter-spacing: 2px;
+          padding-bottom: 5%;
+          font-size: 15px;
+        }
+        p {
+          padding: 2% 10%;
+        }
+      }
+    }
+  }
+}
+// Section: 1 [Tea Station]
+
+#tea-station {
+  .container {
+    .main {
+      margin-top: 10%;
+      @include flexBox();
+      .article-container {
+        width: 430px;
+        height: 300px;
+        border: 1px solid #000000;
+        overflow: hidden;
+        position: relative;
+        border: 10px solid $details-color;
+       .article-img-holder {
+        width: 100%;
+        height: 100%;
+        // background: url(/assets/images/tea.jpeg);
+        // background-position: center;
+        // background-size: cover;
+        // background-repeat: no-repeat;
+        transition: all 1s;
+        img {
+          width: 440px;
+          height: 300px;
+        }
+    }
+  }
+    .article-img-holder:hover {
+        transform: scale(1.2);
+    }
+     
+
+      .text {
+        width: 50%;
+        padding-left: 5%;
+        letter-spacing: 2px;
+        h2 {
+          font-size: 40px;
+        }
+        .grand {
+          letter-spacing: 3px;
+          margin-bottom: 1%;
+          font-size: 30px;
+          font-family: "Grand Hotel", cursive;
+          color: $details-color;
+          font-weight: bold;
+        }
+        .lenght {
+          margin-top: 5%;
+          font-size: 15px;
+          letter-spacing: 0;
+        }
+        button {
+          margin-top: 4%;
+          @extend %primary-button;
+          transition: 0.35s;
+          &:hover {
+            background-color: #b7dd8d;
+            color: #548124;
+          }
+        }
+      }
+      //   @media only screen and (max-width: 992px) {
+      //     .main {
+      //       display: block;
+      //     }
+      // }
+    }
+  }
+}
+
+//second: 2 [Our products]
+
+#products {
+  .container {
+    .products {
+      @include flexBox(space-between);
+      margin-top: 5%;
+      margin-bottom: 10%;
+      background-color: $bg-color;
+      .text {
+        margin-top: 7%;
+        margin-left: 3%;
+        padding-bottom: 10%;
+        .GrandText {
+          color: $details-color;
+          font-size: 25px;
+          font-family: "Grand Hotel", cursive;
+        }
+        .h1 {
+          font-size: 30px;
+          letter-spacing: 3px;
+        }
+        .btn1 {
+          margin-top: 4%;
+          @extend %primary-button;
+          font-family: "Catamaran", sans-serif;
+          transition: 0.35s;
+          &:hover {
+            background-color: #b7dd8d;
+            color: #548124;
+          }
+        }
+      }
+      .typeOfTea {
+        display: flex;
+        align-items: center;
+        margin-right: 2%;
+        .tea {
+          margin: 1%;
+          img {
+            width: 100%;
+            border-radius: 3%;
+          }
+          span {
+            color: $details-color;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 992px) {
+      .products {
+        display: block;
+      }
+    }
+    @media only screen and (max-width: 768px) {
+      .products {
+        display: block;
+        .typeOfTea {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+//Section: 3  [Our services]
+
+#services {
+  margin-bottom: 5%;
+  .container {
+    .title {
+      text-align: center;
+      margin-top: 4%;
+      font-size: 25px;
+      .fontSize {
+        font-size: 30px;
+        letter-spacing: 2px;
+      }
+      .GrandText {
+        color: #648b57;
+        font-size: 30px;
+        font-family: "Grand Hotel", cursive;
+      }
+    }
+    .service {
+      width: 100%;
+      @include flexBox;
+      .box {
+        @include flexBox;
+        .card {
+          margin: 2%;
+          @extend %card;
+          position: relative;
+          &:hover {
+            transform: scale(1.1);
+            transition-duration: 1s;
+            cursor: pointer;
+          }
+          img {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            margin-top: -320px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+          }
+          i {
+            font-size: 30px;
+            background-color: #bbf188;
+            border: 5px solid #f1f5f8;
+            color: #678e40;
+            border-radius: 50%;
+            padding: 4%;
+            position: absolute;
+            margin-right: 5%;
+          }
+          .icon {
+            margin-top: -80px;
+          }
+          h1 {
+            padding-top: 5%;
+          }
+          p {
+            padding-top: 2%;
+            padding: 4%;
+          }
+          .mug {
+            padding: 12px 14px 15px 20px;
+          }
+          button {
+            @extend %primary-button;
+            margin-top: 10%;
+            border-radius: 5px;
+            transition: 0.35s;
+            &:hover {
+              background-color: #b7dd8d;
+              color: #548124;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 991px) {
+  .service {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    .box {
+      width: 95vw;
+      @include flexBox;
+      flex-direction: column;
+      background-size: 100% 62%;
+      margin-left: 2.5%;
+      margin-bottom: 3%;
+      .card {
+        @include flexBox;
+        flex-direction: column;
+        font-size: 28px;
+        i {
+          margin-top: -60%;
+        }
+        p {
+          font-size: 50%;
+        }
+        h1 {
+          font-size: 50%
+        }
+      }
+    }
+    button {
+      margin-top: 5%;
+      margin-bottom: 10%;
+    }
+  }
+}
+
+// Footer
+#footer {
+  letter-spacing: 2px;
+  .container {
+    .main {
+      width: 100%;
+      box-sizing: border-box;
+      display: flex;
+      color: rgb(39, 63, 136);
+      padding-bottom: 10%;
+      padding-top: 5%;
+      background-color: $bg-color;
+      .info {
+        margin-left: 5%;
+        i {
+          color: $details-color;
+          font-weight: 800;
+        }
+        span {
+          font-weight: 400;
+          color: $details-color;
+        }
+        p {
+          margin: 0;
+          font-weight: bold;
+        }
+        .address {
+          margin: 20px;
+        }
+        .email {
+          margin: 20px;
+        }
+        .phone {
+          margin: 20px;
+        }
+      }
+      .contact {
+        box-sizing: border-box;
+        width: 50%;
+        height: 50%;
+        background-color: white;
+        border-radius: 9px;
+        margin-left: 200px;
+        box-shadow: 0 0 7px rgba(73, 73, 73, 0.3);
+        h1 {
+          text-align: center;
+          color: rgb(56, 89, 136);
+          font-family: "M PLUS Rounded 1c", sans-serif;
+          margin: 2% 0;
+        }
+        form {
+          @include flexBox;
+          flex-direction: column;
+        }
+        input {
+          box-sizing: border-box;
+          width: 90%;
+          height: 39px;
+          margin-bottom: 17px;
+          border: none;
+          background-color: rgba(182, 182, 182, 0.3);
+          font-family: "Inconsolata", monospace;
+          font-weight: 700;
+          letter-spacing: 4px;
+          border-radius: 7px;
+          padding: 20px;
+        }
+        textarea {
+          box-sizing: border-box;
+          width: 90%;
+          border: none;
+          background-color: rgba(182, 182, 182, 0.3);
+          font-family: "Inconsolata", monospace;
+          font-weight: 600;
+          letter-spacing: 4px;
+          border-radius: 7px;
+          padding: 20px;
+        }
+        button {
+          @extend %secondary-botton;
+          &:hover {
+            background-color: rgb(110, 195, 84);
+            color: rgb(0, 93, 0);
+          }
+        }
+      }
+    }
+    footer {
+      margin-top: auto;
+      background-color: rgb(30, 30, 30);
+      padding-bottom: 3%;
+      .icons {
+        color: $white-color;
+        font-size: 25px;
+        @include flexBox;
+        i {
+          margin-top: 5%;
+          margin-left: 2%;
+          transition: 0.25s;
+          &:hover {
+            color: rgb(66, 132, 46);
+            font-size: 23px;
+          }
+        }
+      }
+      .footer-text {
+        font-family: "M PLUS Rounded 1c", sans-serif;
+        font-weight: 400;
+        color: $white-color;
+        text-align: center;
+        margin-top: 2%;
+        span {
+          color: $details-color;
+        }
+      }
+    }
+    @media only screen and (max-width: 992px) {
+      .main {
+        display: block;
+        .contact {
+          margin-left: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
