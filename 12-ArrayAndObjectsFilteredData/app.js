@@ -69,29 +69,69 @@ latter(arr);
 // 2.  "name"-i "t" herfi ile bashlayib "t" herfi ile biten obyektlerin sayini tapin
 
 function latterFirstAndEnd(array2) {
-  let count = 0
+  let count = 0;
   for (let i = 0; i < array2.length; i++) {
     if (
-      array2[i].name[0] == "t" && array2[i].name[array2[i].name.length - 1] == "t") {
-        count++
-      }
+      array2[i].name[0] == "t" &&
+      array2[i].name[array2[i].name.length - 1] == "t"
+    ) {
+      count++;
     }
+  }
   console.log(count);
 }
 latterFirstAndEnd(arr);
 
-
-
 // 3.  "name"-i "t" herfi ile bashlayib "t" herfi ile biten obyektlerin "key"- lerinin cemini tapin
 
 function keyWord(array3) {
-    let sum = 0
-        for (let i = 0; i< array3.length; i++) {
-        if(array3[i].name[0]=='t' && array3[i].name[array3[i].name.length-1]=='t'){
-            sum+=array3[i].key
-        } 
+  let sum = 0;
+  for (let i = 0; i < array3.length; i++) {
+    if (
+      array3[i].name[0] == "t" &&
+      array3[i].name[array3[i].name.length - 1] == "t"
+    ) {
+      sum += array3[i].key;
     }
-    console.log(sum);    
+  }
+  console.log(sum);
 }
 keyWord(arr);
 
+// 7. "name"-inin uzunlugu 4 olan obyektlerden ibaret yeni array yaradin.
+
+function nameFour(array7) {
+  let newArr = [];
+  for (let i = 0; i < array7.length; i++) {
+    if (array7[i].name.length == 4) {
+      newArr.push(array7[i].name);
+    }
+  }
+  console.log(newArr);
+}
+nameFour(arr);
+
+// 11.  key'leri 10'dan boyuk ve "name"-i 'l' herfi ile bashlayan obyektleri tapaq
+
+function bigKey(array11) {
+  let arrayNew = [];
+  for (let i = 0; i < array11.length; i++) {
+    if (array11[i].name[0] == "l" && array11[i].key > 10) {
+      arrayNew.push(array11[i].name);
+    }
+  }
+  console.log(arrayNew);
+}
+bigKey(arr);
+
+// 4. "name"-i "e" herfi ile biten obyeklerdeki name-in deyerini "SuperDev" sozu ile evezleyin.
+
+function dev(array4) {
+  for (let i = 0; i < array4.length; i++) {
+    if (array4[i].name[array4[i].name.length - 1] == "e") {
+      array4[i].name = "SuperDev";
+    }
+  }
+  console.log(array4);
+}
+dev(arr);
