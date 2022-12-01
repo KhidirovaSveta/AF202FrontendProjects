@@ -69,15 +69,13 @@ latter(arr);
 // 2.  "name"-i "t" herfi ile bashlayib "t" herfi ile biten obyektlerin sayini tapin
 
 function latterFirstAndEnd(array2) {
-  let secondArray = [];
+  let count = 0
   for (let i = 0; i < array2.length; i++) {
     if (
-      array2[i].name[0] == "t" &&
-      array2[i].name[array2[i].name.length - 1] == "t"
-    ) {
-      secondArray.push(array2[i].name);
+      array2[i].name[0] == "t" && array2[i].name[array2[i].name.length - 1] == "t") {
+        count++
+      }
     }
-  }
-  console.log(secondArray);
+  console.log(count);
 }
 latterFirstAndEnd(arr);
