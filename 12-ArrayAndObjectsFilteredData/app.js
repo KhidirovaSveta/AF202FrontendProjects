@@ -79,3 +79,19 @@ function latterFirstAndEnd(array2) {
   console.log(count);
 }
 latterFirstAndEnd(arr);
+
+
+
+// 3.  "name"-i "t" herfi ile bashlayib "t" herfi ile biten obyektlerin "key"- lerinin cemini tapin
+
+function keyWord(array3) {
+    let sum = 0
+        for (let i = 0; i< array3.length; i++) {
+        if(array3[i].name[0]=='t' && array3[i].name[array3[i].name.length-1]=='t'){
+            sum+=array3[i].key
+        } 
+    }
+    console.log(sum);    
+}
+keyWord(arr);
+
