@@ -114,9 +114,6 @@ function developer(array) {
   let fullstack = [];
 
   for (let i = 0; i < array.length; i++) {
-    console.log("Frontend developer - ", array[i].name);
-    console.log("Fullstack developer - ", array[i].name);
-    console.log("Backend developer - ", array[i].name);
     for (let j = 0; j < array[i]?.skills?.length; j++) {
       if ((array[i].skills[j] == "HTML", "CSS", "JavaScript")) {
         frontend.push(array[i].name);
@@ -124,10 +121,13 @@ function developer(array) {
       } else if ((array[i].skills[j] == "C#", "Java", "SQL")) {
         backend.push(array[i].name);
         // console.log("Backend developer - ", array[i].name);
-       } else if ((array[i].skills[j] == "HTML","CSS","JavaScript","React","Node.js","C#","Java","SQL","MongoDB","Express","Python","Node"));
-         fullstack.push(array[i].name);
-        //  console.log("Fullstack developer - ", array[i].name);
+      } else if ((array[i].skills[j] == "HTML","CSS","JavaScript","React","Node.js","C#","Java","SQL","MongoDB","Express","Python","Node"));
+      fullstack.push(array[i].name);
+      //  console.log("Fullstack developer - ", array[i].name);
     }
+    console.log("Frontend developer - ", array[i].name);
+    console.log("Fullstack developer - ", array[i].name);
+    console.log("Backend developer - ", array[i].name);
   }
 }
 developer(users);
