@@ -62,7 +62,7 @@ function latter(array) {
       newArray.push(array[i].name);
     }
   }
-  console.log(newArray);
+  console.log("Task №1: ", newArray);
 }
 latter(arr);
 
@@ -78,7 +78,7 @@ function latterFirstAndEnd(array2) {
       count++;
     }
   }
-  console.log(count);
+  console.log("Task №2: ", count);
 }
 latterFirstAndEnd(arr);
 
@@ -94,7 +94,7 @@ function keyWord(array3) {
       sum += array3[i].key;
     }
   }
-  console.log(sum);
+  console.log("Task №3: ", sum);
 }
 keyWord(arr);
 
@@ -107,10 +107,38 @@ function nameFour(array7) {
       newArr.push(array7[i].name);
     }
   }
-  console.log(newArr);
+  console.log("Task №7: ", newArr);
 }
 nameFour(arr);
 
+// 8. en boyuk "key" - i olan obyektin "name"-i ni tapin
+
+function bigObj(array8) {
+  let max = 0;
+  let string = "";
+  for (let i = 0; i < array8.length; i++) {
+    if (array8[i].key > max) {
+      max = array8[i].key;
+      string = array8[i].name;
+    }
+  }
+  console.log("Task №8: ", max + " " +string);
+}
+bigObj(arr);
+
+
+// function bigObj(array8) {
+//   let max = 0;
+//   let arrneew = [];
+//   for (let i = 0; i < array8.length; i++) {
+//     if (array8[i].key > max) {
+//       max = array8[i].key;
+//       arrneew = array8[i].name;
+//     }
+//   }
+//   console.log("Task №8: ", max + " " +arrneew);
+// }
+// bigObj(arr);
 // 11.  key'leri 10'dan boyuk ve "name"-i 'l' herfi ile bashlayan obyektleri tapaq
 
 function bigKey(array11) {
@@ -120,9 +148,10 @@ function bigKey(array11) {
       arrayNew.push(array11[i].name);
     }
   }
-  console.log(arrayNew);
+  console.log("Task №11: ", arrayNew);
 }
 bigKey(arr);
+
 
 // 4. "name"-i "e" herfi ile biten obyeklerdeki name-in deyerini "SuperDev" sozu ile evezleyin.
 
@@ -132,6 +161,6 @@ function dev(array4) {
       array4[i].name = "SuperDev";
     }
   }
-  console.log(array4);
+  console.log("Task №4: ", array4);
 }
 dev(arr);
