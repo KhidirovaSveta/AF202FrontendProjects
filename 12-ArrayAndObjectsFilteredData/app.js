@@ -112,6 +112,25 @@ function longLength(array5) {
 }
 longLength(arr);
 
+// 6
+
+function multip(array6) {
+  let maximum = 0;
+  let multiply = 0;
+  for (let i = 0; i < array6.length; i++) {
+    if (array6[i].name.length > maximum) {
+      maximum = array6[i].name.length;
+    }
+  }
+  for (let j = 0; j < array6.length; j++) {
+    if (array6[j].name.length == maximum) {
+      multiply = Math.pow(array6[j].name.length, 2);
+    }
+  }
+  console.log("Task №6: ", multiply);
+}
+multip(arr);
+
 // 7. "name"-inin uzunlugu 4 olan obyektlerden ibaret yeni array yaradin.
 
 function nameFour(array7) {
@@ -139,7 +158,6 @@ function bigObj(array8) {
   console.log("Task №8:  name:", string + ", key: " + max);
 }
 bigObj(arr);
-
 
 // 11.  key'leri 10'dan boyuk ve "name"-i 'l' herfi ile bashlayan obyektleri tapaq
 
