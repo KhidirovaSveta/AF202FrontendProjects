@@ -98,6 +98,20 @@ function keyWord(array3) {
 }
 keyWord(arr);
 
+// 5 "name"-i en uzun olan obyektin key-i ni tapin
+
+function longLength(array5) {
+  let max = 0;
+  for (let i = 0; i < array5.length; i++) {
+    if (array5[i].name.length > max);
+    {
+      max = array5[i].key;
+    }
+  }
+  console.log("Task №5: ", max);
+}
+longLength(arr);
+
 // 7. "name"-inin uzunlugu 4 olan obyektlerden ibaret yeni array yaradin.
 
 function nameFour(array7) {
@@ -122,23 +136,11 @@ function bigObj(array8) {
       string = array8[i].name;
     }
   }
-  console.log("Task №8: ", max + " " +string);
+  console.log("Task №8:  name:", string + ", key: " + max);
 }
 bigObj(arr);
 
 
-// function bigObj(array8) {
-//   let max = 0;
-//   let arrneew = [];
-//   for (let i = 0; i < array8.length; i++) {
-//     if (array8[i].key > max) {
-//       max = array8[i].key;
-//       arrneew = array8[i].name;
-//     }
-//   }
-//   console.log("Task №8: ", max + " " +arrneew);
-// }
-// bigObj(arr);
 // 11.  key'leri 10'dan boyuk ve "name"-i 'l' herfi ile bashlayan obyektleri tapaq
 
 function bigKey(array11) {
@@ -151,7 +153,6 @@ function bigKey(array11) {
   console.log("Task №11: ", arrayNew);
 }
 bigKey(arr);
-
 
 // 4. "name"-i "e" herfi ile biten obyeklerdeki name-in deyerini "SuperDev" sozu ile evezleyin.
 
