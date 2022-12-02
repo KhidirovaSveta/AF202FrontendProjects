@@ -127,7 +127,7 @@ function multip(array6) {
       multiply = Math.pow(array6[j].name.length, 2);
     }
   }
-  console.log("Task №6: ", multiply);
+  console.log("Task №6: ", maximum+ " kvadrat " + multiply);
 }
 multip(arr);
 
