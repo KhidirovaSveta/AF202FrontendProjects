@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&family=Righteous&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+}
+#toDo {
+  background-image: linear-gradient(
+    to top,
+    #051937,
+    #001f49,
+    #00255c,
+    #002b6f,
+    #003082,
+    #01459b,
+    #015bb5,
+    #0072ce,
+    #009ce7,
+    #00c2e4,
+    #00e3cd,
+    #84ffb0
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.container {
+  width: 1250px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.img {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  z-index: -1;
+}
+
+.main {
+  width: 50%;
+}
+h1 {
+  text-align: center;
+  color:  #00255c;
+  font-size: 40px;
+  font-family: "Righteous", cursive;
+}
+button {
+  background-color: #6da800;
+  border: none;
+  color: whitesmoke;
+  width: 67px;
+  height: 40px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+button:hover {
+  transform: scale(1.03);
+  background-color: #5c890a;
+}
+#deleteBtn {
+  background-color: #d40000;
+}
+#deleteBtn:hover {
+  background-color: #ab0000;
+}
+.btn {
+  margin-right: 4px;
+  margin-top: -10px;
+  background-color: #cccc00;
+}
+.btn:hover {
+  background-color: #b4b423;
+}
+.btn2 {
+  margin-top: 1px;
+  background-color: #d40000;
+}
+.btn2:hover {
+  background-color: #b50000;
+}
+input {
+  width: 345px;
+  height: 40px;
+  background-color: whitesmoke;
+  border: 1px solid #25591f5c;
+  border-radius: 5px;
+  padding-left: 10px;
+  margin-right: 5px;
+}
+.box {
+  width: 100%;
+}
+.taskDiv {
+  box-sizing: border-box;
+  width: 505px;
+  height: 45px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  border: 1px solid #25591f5c;
+  /* flex-direction: row-reverse; */
+
+}
+
+.main {
+  background-color: whitesmoke;
+  height: auto;
+  box-sizing: border-box;
+  width: 550px;
+  padding: 0 20px;
+  padding-bottom: 20px;
+  margin-top: -450px;
+  border-radius: 10px;
+}
+.custumP {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  margin-left: 11px;
+}
+.check img {
+  width: 250px;
+  height: 250px;
+  margin-right: 990px;
+  margin-top: 60px;
+}
+/* .div {
+  display: none;
+} */
+/* .fa-solid {
+  margin: auto;
+  /* margin-left: 400px; 
+} */ 
+
+@media only screen and (max-width: 1200px) {
+
+  .container {
+      width: 100%;
+      height: 100vh;
+    }
+  .main {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 400px;
+  }
+}
