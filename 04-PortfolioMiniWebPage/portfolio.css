@@ -19,10 +19,11 @@ header {
   align-items: center;
   justify-content: space-around;
   z-index: 2;
+  transition: all 2s;
 }
 header.scroll {
   background-color: #fff;
-  transition: all 1s;
+  transition: all 2s;
 }
 .header {
   display: flex;
