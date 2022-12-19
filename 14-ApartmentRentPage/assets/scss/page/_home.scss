@@ -33,7 +33,6 @@
     height: 100vh;
     overflow-y: scroll;
     scrollbar-color: rebeccapurple green;
-    padding: 0 16px;
     box-shadow: 0px 0px 1px black;
     // scrollbar-width: thin;
     position: fixed;
@@ -42,6 +41,7 @@
       display: none;
     }
     h3 {
+      padding: 0 16px;
       margin-top: 15px;
       font-weight: 400;
       font-size: 24px;
@@ -50,9 +50,11 @@
       margin-top: 30px;
     }
     p {
+      padding: 0 16px;
       margin: 15px 0;
     }
     form {
+      padding: 0 16px;
       input {
         border: none;
         width: 100%;
@@ -100,22 +102,33 @@
 
     .links {
       margin-top: 40px;
-      padding: 0 6px;
       ul {
         .apartment-icon {
           display: flex;
           justify-content: flex-start;
           align-items: center;
+          padding: 0 18px;
+          &:hover {
+            background-color: rgb(201, 201, 201);
+          }
         }
         .sub-icon {
           display: flex;
           justify-content: flex-start;
           align-items: center;
+          padding: 0 18px;
+          &:hover {
+            background-color: rgb(201, 201, 201);
+          }
         }
         .contact-icon {
           display: flex;
           justify-content: flex-start;
           align-items: center;
+          padding: 0 18px;
+          &:hover {
+            background-color: rgb(201, 201, 201);
+          }
         }
 
         li {
@@ -123,7 +136,7 @@
           padding: 14px 0;
           a {
             text-decoration: none;
-            padding: 0 10px;
+            padding: 0 5px;
             color: black;
           }
         }
@@ -198,7 +211,7 @@
           margin: 11px 5px;
           margin-left: 60px;
         }
-        .heating{
+        .heating {
           margin-left: 68px;
         }
       }
