@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.box #main-section #contact button, .box #main-section .rules button, .box .scroll-bar form .subBtn {
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  color: #fff;
+  background-color: #4caf50;
+  outline: none;
+  font-size: 15px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+}
+.box #main-section #contact button:hover, .box #main-section .rules button:hover, .box .scroll-bar form .subBtn:hover {
+  background-color: rgb(204, 204, 204);
+  color: #000;
+}
+
+.box #main-section #contact .message input, .box #main-section #contact .email input, .box #main-section #contact .name input, .box #main-section .modal-content input {
+  width: 99%;
+  padding: 14px 7px;
+  border: none;
+  box-shadow: 0px 0px 1px;
+  margin-bottom: 17px;
+}
+
+.header {
+  display: none;
+}
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  color: #fff;
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 52px;
+  z-index: 3;
+}
+.header .nav p {
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 992px) {
+  .header {
+    display: block;
+  }
+}
+.box {
+  display: flex;
+}
+.box .scroll-bar {
+  background-color: #f1f1f1;
+  width: 265px;
+  height: 100vh;
+  overflow-y: scroll;
+  scrollbar-color: rebeccapurple green;
+  padding: 0 16px;
+  box-shadow: 0px 0px 1px black;
+  position: fixed;
+}
+.box .scroll-bar .remove-scroll {
+  margin: 10px 200px;
+  display: none;
+}
+.box .scroll-bar h3 {
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 24px;
+}
+.box .scroll-bar .top {
+  margin-top: 30px;
+}
+.box .scroll-bar p {
+  margin: 15px 0;
+}
+.box .scroll-bar form input {
+  border: none;
+  width: 100%;
+  padding: 10px 8px;
+  box-shadow: 0px 0px 1px black;
+  font-size: inherit;
+}
+.box .scroll-bar form .check-in {
+  margin-bottom: 28px;
+}
+.box .scroll-bar form .check-in .check-icon {
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+.box .scroll-bar form .check-out {
+  margin-bottom: 28px;
+}
+.box .scroll-bar form .check-out .check-out-icon {
+  display: block;
+  margin: 15px 0;
+}
+.box .scroll-bar form .adults {
+  margin-bottom: 20px;
+}
+.box .scroll-bar form .adults .adults-icon {
+  display: block;
+  margin: 15px 0;
+}
+.box .scroll-bar form .kids {
+  margin-bottom: 20px;
+}
+.box .scroll-bar form .kids .kids-icon {
+  display: block;
+  margin: 12px 0;
+}
+.box .scroll-bar form .subBtn {
+  margin-right: 15px;
+}
+.box .scroll-bar form .subBtn .fa-magnifying-glass {
+  margin-right: 20px;
+}
+.box .scroll-bar .links {
+  margin-top: 40px;
+  padding: 0 6px;
+}
+.box .scroll-bar .links ul .apartment-icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.box .scroll-bar .links ul .sub-icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.box .scroll-bar .links ul .contact-icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.box .scroll-bar .links ul li {
+  list-style: none;
+  padding: 14px 0;
+}
+.box .scroll-bar .links ul li a {
+  text-decoration: none;
+  padding: 0 10px;
+  color: black;
+}
+.box #main-section {
+  margin-left: 28%;
+  border-right: 1px solid rgb(207, 207, 207);
+}
+.box #main-section h2 {
+  color: #4caf50;
+  font-weight: 400;
+  font-size: 30px;
+  margin: 20px 0;
+}
+.box #main-section .slider-box img {
+  opacity: 0.5;
+}
+.box #main-section .slider-box img:hover {
+  opacity: 1;
+}
+.box #main-section .slider-box img:active {
+  opacity: 1;
+}
+.box #main-section .slider-box .opacity img {
+  opacity: 1;
+}
+.box #main-section .slider-box .display {
+  display: flex;
+  margin-top: 10px;
+}
+.box #main-section .slider-box .display .img1 {
+  opacity: 1;
+}
+.box #main-section h4 {
+  font-size: 20px;
+  margin: 25px 9px;
+}
+.box #main-section .space {
+  margin-right: 9px;
+  display: flex;
+  border-bottom: 1px solid rgb(232, 232, 232);
+  margin-bottom: 10px;
+}
+.box #main-section .space .reserve p {
+  margin-bottom: 25px;
+}
+.box #main-section .space .reserve i {
+  margin-right: 5px;
+}
+.box #main-section .space .reserve .fa-person {
+  margin-right: 13px;
+  margin-left: 5px;
+}
+.box #main-section .space .time p {
+  margin-left: 170px;
+}
+.box #main-section .space .time .fa-clock {
+  margin: 9px 5px;
+}
+.box #main-section .space .time .icon {
+  margin: 9px 5px;
+  margin-left: 62px;
+}
+.box #main-section .extra-Info {
+  margin: 25px 0;
+  margin-right: 9px;
+  border-bottom: 1px solid rgb(232, 232, 232);
+  padding-bottom: 20px;
+}
+.box #main-section .extra-Info h3 {
+  margin-bottom: 15px;
+}
+.box #main-section .extra-Info p {
+  line-height: 1.5;
+  font-size: 15px;
+}
+.box #main-section .extra-Info .pay {
+  margin-top: 15px;
+}
+.box #main-section .rules {
+  margin: 25px 0;
+  margin-right: 11px;
+  border-bottom: 1px solid rgb(232, 232, 232);
+  padding-bottom: 20px;
+}
+.box #main-section .rules h3 {
+  font-weight: 600;
+}
+.box #main-section .rules p {
+  margin: 15px 0;
+  line-height: 1.5;
+  font-size: 15px;
+}
+.box #main-section .rules button {
+  width: 33%;
+}
+.box #main-section .modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.box #main-section .modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  text-align: center;
+  position: relative;
+}
+.box #main-section .modal-content .close {
+  position: absolute;
+  right: 62px;
+  top: 25px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.box #main-section .modal-content .close .close:hover,
+.box #main-section .modal-content .close .close:focus {
+  color: #000;
+  cursor: pointer;
+}
+.box #main-section .modal-content h1 {
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+.box #main-section .modal-content input {
+  padding: 15px 10px;
+  width: 95%;
+}
+.box #main-section .modal-content .modalBtn {
+  margin-top: 5px;
+  width: 14%;
+  padding: 14px 0;
+}
+.box #main-section #contact {
+  margin: 25px 0;
+  margin-right: 9px;
+}
+.box #main-section #contact h1 {
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+.box #main-section #contact p {
+  margin-bottom: 12px;
+}
+.box #main-section #contact p i {
+  margin-right: 10px;
+}
+.box #main-section #contact button {
+  width: 33%;
+}
+.box #main-section footer {
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+.box #main-section footer p {
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 992px) {
+  .box #main-section {
+    margin-left: 15px;
+  }
+  .box .scroll-bar {
+    display: none;
+    z-index: 5;
+    height: 100%;
+  }
+  .box .scroll-bar .remove-scroll {
+    display: block;
+  }
+}/*# sourceMappingURL=main.css.map */

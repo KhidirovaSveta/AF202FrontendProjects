@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Rental</title>
+  </head>
+  <body>
+    <div class="container">
+      
+      <!-- header none -->
+      <div class="header">
+        <div class="backdrop"></div>
+        <div class="nav">
+          <p>Rental</p>
+          <div class="icon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="box">
+        <div class="scroll-bar">
+          <span class="remove-scroll">
+            <i class="fa-solid fa-x"></i>
+          </span>
+          <h3 class="top">Rental</h3>
+          <h3>from $99</h3>
+          <p>per night</p>
+          <form action="">
+            <div class="check-in">
+              <div class="check-icon">
+                <i class="fa-regular fa-calendar-check"></i>
+                <label for=""> Check in</label>
+              </div>
+              <input
+                type="text"
+                class="check-in-input inputValue"
+                placeholder="DD MM YYYY"
+              />
+            </div>
+
+            <div class="check-out">
+              <div class="check-out-icon">
+                <i class="fa-regular fa-calendar"></i>
+                <label for=""> Check Out</label>
+              </div>
+              <input
+                type="text"
+                class="check-out-input inputValue"
+                placeholder="DD MM YYYY"
+              />
+            </div>
+
+            <div class="adults">
+              <div class="adults-icon">
+                <i class="fa-solid fa-person"></i>
+                <label for=""> Adults</label>
+              </div>
+              <input
+                type="number"
+                id="adult"
+                value="1"
+                name="adults"
+                class="adults-input inputValue"
+              />
+            </div>
+
+            <div class="kids">
+              <div class="kids-icon">
+                <i class="fa-solid fa-child-reaching"></i>
+                <label for=""> Kids </label>
+              </div>
+              <input
+                type="number"
+                id="kids"
+                value="0"
+                name="kids"
+                class="kids-input inputValue"
+              />
+            </div>
+            <button type="submit" class="subBtn">
+              <i class="fa-solid fa-magnifying-glass"></i>Search availability
+            </button>
+          </form>
+
+          <div class="links">
+            <ul>
+              <div class="apartment-icon">
+                <i class="fa-solid fa-building"></i>
+                <li><a href="#main-section"> Apartment </a></li>
+              </div>
+
+              <div class="sub-icon">
+                <i class="fa fa-rss"></i>
+                <li><a href="#" id="subscribe"> Subscribe </a></li>
+              </div>
+              <div class="contact-icon">
+                <i class="fa fa-envelope"></i>
+                <li><a href="#contact"> Contact </a></li>
+              </div>
+            </ul>
+          </div>
+        </div>
+
+        <!-- home -->
+
+        <div id="main-section">
+          <h2>The Apartment</h2>
+          <div class="slider-box">
+            <div class="opacity">
+              <img
+                src="assets/images/livingroom1.jfif"
+                class="big-img"
+                alt="Living Room"
+                width="98%"
+              />
+            </div>
+            <div class="display">
+              <div>
+                <img
+                  src="assets/images/livingroom1.jfif"
+                  alt="Living Room"
+                  width="90%"
+                  class="img1"
+                />
+              </div>
+              <div>
+                <img
+                  src="assets/images/kitchen-room2.jfif"
+                  alt="Kitchen Room"
+                  width="90%"
+                  class="img2"
+                />
+              </div>
+              <div>
+                <img
+                  src="assets/images/bedroom3.jfif"
+                  alt="Bedroom"
+                  width="90%"
+                  class="img3"
+                />
+              </div>
+              <div>
+                <img
+                  src="assets/images/livingroom4.jfif"
+                  alt="Living Room II"
+                  width="90%"
+                  class="img4"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Space here -->
+          
+          <h4>The space</h4>
+          <div class="space">
+            <div class="reserve">
+              <p><i class="fa-solid fa-person"></i>Max people: 4</p>
+              <p><i class="fa fa-fw fa-bath"></i> Bathrooms: 2</p>
+              <p><i class="fa fa-fw fa-bed"></i> Bedrooms: 1</p>
+            </div>
+            <div class="time">
+              <p><i class="fa-regular fa-clock"></i> Check in: After 3PM</p>
+              <p><i class="fa-regular fa-clock"></i> Check Out: 12PM</p>
+            </div>
+          </div>
+
+          <h4>Amenities</h4>
+          <div class="space amenities">
+            <div class="reserve">
+              <p><i class="fa-solid fa-shower"></i> Shower</p>
+              <p><i class="fa-solid fa-wifi"></i> WiFi</p>
+              <p><i class="fa-solid fa-tv"></i> TV</p>
+            </div>
+            <div class="time">
+              <p><i class="fa fa-fw fa-cutlery icon"></i> Kitchen</p>
+              <p>
+                <i class="fa-solid fa-temperature-three-quarters icon"></i>
+                Heating
+              </p>
+              <p><i class="fa fa-fw fa-wheelchair icon"></i> Accessible</p>
+            </div>
+          </div>
+
+          <!-- Extra info here -->
+
+          <div class="extra-Info">
+            <h3>Extra Info</h3>
+            <p>
+              Our apartment is really clean and we like to keep it that way.
+              Enjoy the lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p class="pay">
+              We accept:
+              <i class="fa-regular fa-credit-card"></i>
+              <i class="fa-brands fa-cc-mastercard"></i>
+              <i class="fa-brands fa-cc-amex"></i>
+              <i class="fa-brands fa-cc-paypal"></i>
+            </p>
+          </div>
+
+          <div class="rules">
+            <h3>Rules</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p>
+              Subscribe to receive updates on available dates and special
+              offers.
+            </p>
+
+            <button id="myBtn">Subscribe</button>
+            <div id="myModal" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="modal-header"></div>
+                <h1>SUBSCRIBE</h1>
+                <span class="close"><i class="fa-solid fa-x"></i></span>
+                <p>
+                  Join our mailing list to receive updates on available dates
+                  and special offers.
+                </p>
+                <input
+                  id="subValue"
+                  type="text"
+                  placeholder="Enter e-mail"
+                /><br />
+                <button class="modalBtn">Subscribe</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact here -->
+
+          <div id="contact">
+            <h1>Contact</h1>
+            <div class="info">
+              <p><i class="fa-solid fa-location-dot"></i>Chicago, US</p>
+              <p><i class="fa-solid fa-phone"></i>Phone: +00 151515</p>
+              <p><i class="fa fa-envelope"></i> Email: mail@mail.com</p>
+
+              <p>Questions? Go ahead, ask them:</p>
+
+              <div class="contact-form" id="contact-form">
+                <div class="name">
+                  <input type="text" id="contactValue" placeholder="Name" />
+                </div>
+                <div class="email">
+                  <input type="email" id="contactValue" placeholder="Email" />
+                </div>
+                <div class="message">
+                  <input type="text" id="contactValue" placeholder="Message" />
+                </div>
+
+                <button type="submit" id="contactBtn">Send a Message</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- footer -->
+          <footer>
+            <p>
+              Powered by<a
+                href="https://www.w3schools.com/w3css/default.asp"
+                target="_blank"
+              >
+                w2.css</a
+              >
+            </p>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/home.js"></script>
+  </body>
+</html>

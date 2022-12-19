@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+
+.header {
+  display: none;
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    color: #fff;
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 52px;
+    z-index: 3;
+    p {
+      font-size: 25px;
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  .header {
+    display: block;
+  }
+}
+.box {
+  display: flex;
+  .scroll-bar {
+    background-color: #f1f1f1;
+    width: 265px;
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+    padding: 0 16px;
+    box-shadow: 0px 0px 1px black;
+    // scrollbar-width: thin;
+    position: fixed;
+    .remove-scroll {
+      margin: 10px 200px;
+      display: none;
+    }
+    h3 {
+      margin-top: 15px;
+      font-weight: 400;
+      font-size: 24px;
+    }
+    .top {
+      margin-top: 30px;
+    }
+    p {
+      margin: 15px 0;
+    }
+    form {
+      input {
+        border: none;
+        width: 100%;
+        padding: 10px 8px;
+        box-shadow: 0px 0px 1px black;
+        font-size: inherit;
+      }
+      .check-in {
+        margin-bottom: 28px;
+        .check-icon {
+          display: block;
+          margin-top: 50px;
+          margin-bottom: 15px;
+        }
+      }
+      .check-out {
+        margin-bottom: 28px;
+        .check-out-icon {
+          display: block;
+          margin: 15px 0;
+        }
+      }
+      .adults {
+        margin-bottom: 20px;
+        .adults-icon {
+          display: block;
+          margin: 15px 0;
+        }
+      }
+      .kids {
+        margin-bottom: 20px;
+        .kids-icon {
+          display: block;
+          margin: 12px 0;
+        }
+      }
+      .subBtn {
+        @extend %primary-button;
+        margin-right: 15px;
+        .fa-magnifying-glass {
+          margin-right: 20px;
+        }
+      }
+    }
+
+    .links {
+      margin-top: 40px;
+      padding: 0 6px;
+      ul {
+        .apartment-icon {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+        }
+        .sub-icon {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+        }
+        .contact-icon {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+        }
+
+        li {
+          list-style: none;
+          padding: 14px 0;
+          a {
+            text-decoration: none;
+            padding: 0 10px;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+  // home
+  #main-section {
+    // margin-left: 280px;
+    margin-left: 28%;
+    border-right: 1px solid rgb(207, 207, 207);
+    h2 {
+      color: #4caf50;
+      font-weight: 400;
+      font-size: 30px;
+      margin: 20px 0;
+    }
+    .slider-box {
+      img {
+        opacity: 0.5;
+        &:hover {
+          opacity: 1;
+        }
+        &:active {
+          opacity: 1;
+        }
+      }
+      .opacity {
+        img {
+          opacity: 1;
+        }
+      }
+      .display {
+        display: flex;
+        margin-top: 10px;
+        .img1 {
+          opacity: 1;
+        }
+      }
+    }
+    h4 {
+      font-size: 20px;
+      margin: 25px 9px;
+    }
+
+    // space here
+
+    .space {
+      margin-right: 9px;
+      display: flex;
+      border-bottom: 1px solid rgb(232, 232, 232);
+      .reserve {
+        p {
+          margin-bottom: 25px;
+        }
+        i {
+          margin-right: 5px;
+        }
+        .fa-person {
+          margin-right: 13px;
+          margin-left: 5px;
+        }
+      }
+      .time {
+        p {
+          margin-left: 170px;
+        }
+        .fa-clock {
+          margin: 9px 5px;
+        }
+        .icon {
+          margin: 9px 5px;
+          margin-left: 62px;
+        }
+      }
+      margin-bottom: 10px;
+    }
+
+    // Extra info here
+
+    .extra-Info {
+      margin: 25px 0;
+      margin-right: 9px;
+      border-bottom: 1px solid rgb(232, 232, 232);
+      padding-bottom: 20px;
+      h3 {
+        margin-bottom: 15px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 15px;
+      }
+      .pay {
+        margin-top: 15px;
+      }
+    }
+
+    .rules {
+      margin: 25px 0;
+      margin-right: 11px;
+      border-bottom: 1px solid rgb(232, 232, 232);
+      padding-bottom: 20px;
+      h3 {
+        font-weight: 600;
+      }
+      p {
+        margin: 15px 0;
+        line-height: 1.5;
+        font-size: 15px;
+      }
+      button {
+        @extend %primary-button;
+        width: 33%;
+      }
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgb(0, 0, 0);
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    // Modal Content
+    .modal-content {
+      background-color: #fefefe;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 60%;
+      text-align: center;
+      position: relative;
+      // close button
+      .close {
+        position: absolute;
+        right: 62px;
+        top: 25px;
+        font-size: 15px;
+        font-weight: 700;
+        .close:hover,
+        .close:focus {
+          color: #000;
+          cursor: pointer;
+        }
+      }
+      h1 {
+        letter-spacing: 2px;
+        font-weight: 300;
+      }
+      input {
+        @extend %input;
+        padding: 15px 10px;
+        width: 95%;
+      }
+      .modalBtn {
+        margin-top: 5px;
+        width: 14%;
+        padding: 14px 0;
+      }
+    }
+
+    // Contact section here
+
+    #contact {
+      margin: 25px 0;
+      margin-right: 9px;
+      h1 {
+        margin-bottom: 15px;
+        font-weight: 400;
+      }
+      p {
+        margin-bottom: 12px;
+        i {
+          margin-right: 10px;
+        }
+      }
+      .name {
+        input {
+          @extend %input;
+        }
+      }
+      .email {
+        input {
+          @extend %input;
+        }
+      }
+      .message {
+        input {
+          @extend %input;
+        }
+      }
+      button {
+        @extend %primary-button;
+        width: 33%;
+      }
+    }
+    footer {
+      margin-top: 35px;
+      margin-bottom: 15px;
+      p {
+        font-size: 15px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  .box {
+    #main-section {
+      margin-left: 15px;
+    }
+    .scroll-bar {
+      display: none;
+      z-index: 5;
+      height: 100%;
+      // width: 30%;
+
+      .remove-scroll {
+        display: block;
+      }
+    }
+  }
+}
