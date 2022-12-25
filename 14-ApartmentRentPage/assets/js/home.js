@@ -82,7 +82,7 @@ modalBtn.addEventListener("click", function (event) {
   event.preventDefault();
   subArray.push(subs.value);
   localStorage.setItem("subscribe", JSON.stringify(subArray));
-  subs.value = ""
+  subs.value = "";
 });
 
 // modal
