@@ -1,0 +1,26 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  #header {
+    margin-top: 15px;
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      list-style: none;
+      li {
+        padding: 0 25px;
+        .navBar {
+          text-decoration: none;
+          transition: all 0.5s;
+          color: #7e15ff;
+          font-weight: 800;
+          &:hover {
+            padding-bottom: 4px;
+            border-bottom: 1px solid #7c10ff;
+          }
+        }
+      }
+    }
+  }
+}
